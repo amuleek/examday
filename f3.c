@@ -1,25 +1,28 @@
 #include <stdio.h>
+
 int main()
 {
-    int no, oriNo, rem, res = 0;
+    int year;
 
-    printf("Enter a three digit integer: ");
-    scanf("%d", &no);
+    printf("Enter a year: ");
+    scanf("%d",&year);
 
-    oriNo = no;
-
-    while (oriNo != 0)
+    if(year%4 == 0)
     {
-        rem = oriNo%10;
-        res += rem*rem*rem;
-        oriNo /= 10;
+        if( year%100 == 0)
+        {
+            // year is divisible by 400, hence the year is a leap year
+            if ( year%400 == 0)
+                printf("%d is a leap year.", year);
+            else
+                printf("%d is not a leap year.", year);
+        }
+        else
+            printf("%d is a leap year.", year );
     }
-
-    if(result == no)
-        printf("%d is an Armstrong number.",no);
     else
-        printf("%d is not an Armstrong number.",no);
-
+        printf("%d is not a leap year.", year);
+    
     return 0;
 }
 
