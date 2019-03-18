@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n, reversedInteger = 0, remainder, originalInteger;
+    int n, revint = 0, remainder, originalInteger;
 
     printf("Enter an integer: ");
     scanf("%d", &n);
@@ -12,12 +12,12 @@ int main()
     while( n!=0 )
     {
         remainder = n%10;
-        reversedInteger = reversedInteger*10 + remainder;
+        revint = revint*10 + remainder;
         n /= 10;
     }
 
     
-    if (originalInteger == reversedInteger)
+    if (originalInteger == revint)
         printf("%d is a palindrome.", originalInteger);
     else
         printf("%d is not a palindrome.", originalInteger);
