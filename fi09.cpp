@@ -2,35 +2,37 @@
 
 using namespace std;
 
-class Box {
+class Box
+{
    public:
       double length;         // Length of a box
       double breadth;        // Breadth of a box
       double height;         // Height of a box
 
-      // Member functions declaration
+      
       double getVolume(void);
       void setLength( double len );
       void setBreadth( double bre );
       void setHeight( double hei );
 };
 
-// Member functions definitions
-double Box::getVolume(void) {
+double Box::getVolume(void) 
+{
    return length * breadth * height;
 }
 
-void Box::setLength( double len ) {
+void Box::setLength( double len ) 
+{
    length = len;
 }
-void Box::setBreadth( double bre ) {
-   breadth = bre;
+void Box::setBreadth( double bre )
+{   breadth = bre;
 }
-void Box::setHeight( double hei ) {
+void Box::setHeight( double hei ) 
+{
    height = hei;
 }
 
-// Main function for the program
 int main() {
    Box Box1;                // Declare Box1 of type Box
    Box Box2;                // Declare Box2 of type Box
