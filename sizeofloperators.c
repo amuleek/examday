@@ -20,3 +20,6 @@ int main(int argc, char** argv)
     printf("UINT_MAX    :   %u\n", (unsigned int) UINT_MAX);
     printf("ULONG_MAX   :   %lu\n", (unsigned long) ULONG_MAX);
     printf("USHRT_MAX   :   %d\n", (unsigned short) USHRT_MAX);
+
+            return 0;
+}
